@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+bool Palindrome(int num)
+{
+	int temp = num;
+	int digit = 0;
+	int reverseNum = 0;
+	
+	while(num != 0)
+	{
+		digit = num % 10;
+		reverseNum = (reverseNum *10)+digit;
+		num /= 10;
+	}
+	
+	if(temp == reverseNum)
+		return true;
+	else
+		return false;
+}
+
+int main()
+{
+	if(Palindrome(121121))
+		cout << "Number is Palindrome" << endl;
+	else
+		cout << "Not a Palindrome" << endl;
+	return 0;
+}

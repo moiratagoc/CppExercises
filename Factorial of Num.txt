@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int FactorialofNum(int num)
+{
+	for(int i = num-1; i > 0; i--)
+	{
+		num *=i;
+	}
+	return num;
+}
+
+int main()
+{
+	cout << FactorialofNum(5);
+	return 0;
+}

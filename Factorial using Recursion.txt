@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int FactorialRecur(int num)
+{
+	if(num == 1)
+		return 1;
+	else
+		return num*FactorialRecur(num-1);
+}
+
+int main()
+{
+	cout << FactorialRecur(5);
+	
+	return 0;
+}
